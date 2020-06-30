@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\fonts\" />
+    <Folder Include="wwwroot\prism\" />
   </ItemGroup>
 
 </Project>

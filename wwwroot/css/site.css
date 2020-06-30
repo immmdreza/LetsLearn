@@ -11,8 +11,94 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: slateblue;
+}
+
 body {
     background-color: black;
     color: white;
     font-family: Yekan, 'Roboto Mono', monospace;
+}
+
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+    left: 0;
+    background-color: #111;
+}
+
+/* Control the right side */
+.right {
+    right: 0;
+    background-color: red;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+    /* Style the image inside the centered container, if needed */
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+.dark-color1{
+    color:palevioletred;
+}
+
+.dark-color2 {
+    color:darkorange;
+}
+
+.codeblock {
+    border: 5px;
+    border-style: dashed;
+    border-radius: 10px;
+    margin: auto;
+    width: 50%;
+}
+
+@media (max-width: 800px) {
+    .codeblock {
+        width: 100%;
+        margin: auto;
+    }
+
+    h1{
+        font-size : 20px;
+    }
 }
